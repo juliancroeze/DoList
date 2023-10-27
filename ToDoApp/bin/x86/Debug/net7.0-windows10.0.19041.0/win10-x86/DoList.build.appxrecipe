@@ -754,6 +754,15 @@
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\Assets\LogoWhite.png">
+      <PackagePath>Assets\LogoWhite.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\Assets\Screenshot.PNG">
+      <PackagePath>Assets\Screenshot.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>

@@ -24,26 +24,26 @@
         </StackPanel>
 
         <!-- ListView (Task List) -->
-        <StackPanel Grid.Row="1">
-            <ListView 
-                x:Name="taskList" SelectionMode="None" HorizontalAlignment="Stretch">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border HorizontalAlignment="Stretch" Name="checkBoxBorder" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource AccentAAFillColorSecondaryBrush}" Padding="5,0" Margin="0,5" CornerRadius="2" Background="{ThemeResource AcrylicInAppFillColorDefaultBrush}">
-                            <Grid>
-                                <CheckBox x:Name="checkBox" Click="CheckBox_Ticked" HorizontalAlignment="Left" IsChecked="{Binding IsCompleted}" Height="20" Margin="5,0" Content="{Binding TaskName}" />
-                                <AppBarButton Icon="Delete" HorizontalAlignment="Right" Width="40" Height="50"/>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+        <Grid Grid.Row="1">
+                <ListView 
+                x:Name="taskList" SelectionMode="None" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border HorizontalAlignment="Stretch" Name="checkBoxBorder" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource ButtonDisabledBorderThemeBrush}" Padding="5,0" Margin="0,5" CornerRadius="2" Background="{ThemeResource CardBackgroundFillColorDefault}">
+                                <Grid>
+                                    <CheckBox x:Name="checkBox" Click="CheckBox_Ticked" HorizontalAlignment="Left" IsChecked="{Binding IsCompleted}" Height="20" Margin="5,0" Content="{Binding TaskName}" />
+                                    <AppBarButton Icon="Delete" HorizontalAlignment="Right" Width="40" Height="50"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
 
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                    </Style>
-                </ListView.ItemContainerStyle>
-            </ListView>
-        </StackPanel>
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                </ListView>
+        </Grid>
     </Grid>
 </Page>
