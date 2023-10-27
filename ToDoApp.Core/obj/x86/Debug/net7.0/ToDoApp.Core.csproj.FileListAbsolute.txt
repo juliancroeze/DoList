@@ -1,0 +1,12 @@
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\bin\x86\Debug\net7.0\ToDoApp.Core.deps.json
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\bin\x86\Debug\net7.0\ToDoApp.Core.dll
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\bin\x86\Debug\net7.0\ToDoApp.Core.pdb
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.csproj.AssemblyReference.cache
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.AssemblyInfoInputs.cache
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.AssemblyInfo.cs
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.dll
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\refint\ToDoApp.Core.dll
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ToDoApp.Core.pdb
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp.Core\obj\x86\Debug\net7.0\ref\ToDoApp.Core.dll

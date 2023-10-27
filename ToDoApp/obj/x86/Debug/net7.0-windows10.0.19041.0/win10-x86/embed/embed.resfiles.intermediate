@@ -1,0 +1,9 @@
+App.xbf
+MainWindow.xbf
+Styles\FontSizes.xbf
+Styles\TextBlock.xbf
+Styles\Thickness.xbf
+Views\SettingsPage.xbf
+Views\ShellPage.xbf
+Views\ToDoPage.xbf
+Views\TrashPage.xbf

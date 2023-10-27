@@ -1,0 +1,1 @@
+C:\Users\Julian\source\repos\ToDoApp\ToDoApp\DoList.csproj;x86

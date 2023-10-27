@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rRD2Bvm3FJHyW12aIdGQNOpjC8v68Rlha+bMCZ+qcO29Y3FSr8OQuB9eejkkPKp7BagyaYzrGbimoCop5w04pA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Julian\\source\\repos\\ToDoApp\\ToDoApp.Core\\ToDoApp.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Julian\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
