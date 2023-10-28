@@ -15,35 +15,63 @@
         <StackPanel Margin="12" Grid.Row="0">
             <Grid>
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <TextBox x:ConnectionId='5' x:Name="taskInput" PlaceholderText="Enter a new task" />
-                <Button x:ConnectionId='6' Style="{StaticResource AccentButtonStyle}" Content="Add"                       Margin="10,0,0,0" Grid.Column="1" />
+
+                <DropDownButton Grid.Column="0" Margin="0,0,5,0">
+                    <FontIcon Glyph="&#xE71C;" />
+
+
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuFlyoutItem Text="High"  />
+                            <MenuFlyoutItem Text="Medium"  />
+                            <MenuFlyoutItem Text="Low"  />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton> 
+                
+                <TextBox x:ConnectionId='5' Grid.Column="1" x:Name="taskInput" PlaceholderText="Enter a new task" />
+                <Button x:ConnectionId='6' Style="{StaticResource AccentButtonStyle}" Content="Add"                       Margin="10,0,0,0" Grid.Column="3" />
+                <DropDownButton x:ConnectionId='7' x:Name="priorityMenu" Content="Medium" Grid.Column="2" Margin="10,0,0,0">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuFlyoutItem x:ConnectionId='8' Text="High"                        />
+                            <MenuFlyoutItem x:ConnectionId='9' Text="Medium"                        />
+                            <MenuFlyoutItem x:ConnectionId='10' Text="Low"                        />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
+
             </Grid>
         </StackPanel>
 
         <!-- ListView (Task List) -->
         <Grid Grid.Row="1">
-                <ListView x:ConnectionId='2' 
-                x:Name="taskList" SelectionMode="None" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Border HorizontalAlignment="Stretch" Name="checkBoxBorder" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource ButtonDisabledBorderThemeBrush}" Padding="5,0" Margin="0,5" CornerRadius="2" Background="{ThemeResource CardBackgroundFillColorDefault}">
-                                <Grid>
-                                    <CheckBox x:ConnectionId='4' x:Name="checkBox"                         HorizontalAlignment="Left" IsChecked="{Binding IsCompleted}" Height="20" Margin="5,0" Content="{Binding TaskName}" />
-                                    <AppBarButton Icon="Delete" HorizontalAlignment="Right" Width="40" Height="50"/>
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
+            <ListView x:ConnectionId='2' 
+            x:Name="taskList" SelectionMode="None" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border HorizontalAlignment="Stretch" Name="checkBoxBorder" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource ButtonDisabledBorderThemeBrush}" Padding="5,0" Margin="0,5" CornerRadius="2" Background="{ThemeResource CardBackgroundFillColorDefault}">
+                            <Grid>
+                                <CheckBox x:ConnectionId='4' x:Name="checkBox"                         HorizontalAlignment="Left" IsChecked="{Binding IsCompleted}" Height="20" Margin="0, 0, 20, 0" Content="{Binding TaskName}" />
+                                <Ellipse VerticalAlignment="Center" Fill="{ThemeResource AccentAAFillColorDefaultBrush}" Width="10" Height="10" HorizontalAlignment="Right" Margin="0,0,105,0"/>
+                                <TextBlock Width="60" TextAlignment="Left" Text="{Binding priority}" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0, 0, 40, 2"/>
+                                <AppBarButton Icon="Delete" HorizontalAlignment="Right" Width="40" Height="50"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
 
-                    <ListView.ItemContainerStyle>
-                        <Style TargetType="ListViewItem">
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-                        </Style>
-                    </ListView.ItemContainerStyle>
-                </ListView>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
         </Grid>
     </Grid>
 </Page>

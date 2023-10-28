@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-27T19:54:37.598</Modified>
+      <Modified>2023-10-28T08:17:32.093</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-27T19:54:37.283</Modified>
+      <Modified>2023-10-28T08:17:31.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\DoList.runtimeconfig.json">
       <PackagePath>DoList.runtimeconfig.json</PackagePath>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\DoList.dll">
       <PackagePath>DoList.dll</PackagePath>
-      <Modified>2023-10-27T19:54:37.127</Modified>
+      <Modified>2023-10-28T08:17:31.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\appsettings.json">
       <PackagePath>appsettings.json</PackagePath>
@@ -51,7 +51,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\obj\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\apphost.exe">
       <PackagePath>DoList.exe</PackagePath>
-      <Modified>2023-10-27T19:54:37.138</Modified>
+      <Modified>2023-10-28T08:17:31.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Julian\source\repos\ToDoApp\ToDoApp\bin\x86\Debug\net7.0-windows10.0.19041.0\win10-x86\DoList.deps.json">
       <PackagePath>DoList.deps.json</PackagePath>

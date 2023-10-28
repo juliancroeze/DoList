@@ -38,12 +38,22 @@ public sealed partial class ToDoPage : Page
     private void AddTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         addTask();
+        priorityMenu.Content = "Medium";
     }
 
     private void RemoveTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         removeTask();
 
+    }
+
+    private void MenuItem_Click(object sender, RoutedEventArgs e)
+    {
+        if (sender is MenuFlyoutItem menuItem)
+        {
+            // Set the content of the DropDownButton to the selected item's text
+            priorityMenu.Content = menuItem.Text;
+        }
     }
 
     private void CheckBox_Ticked(object sender, RoutedEventArgs e)
@@ -54,7 +64,8 @@ public sealed partial class ToDoPage : Page
     private void addTask()
     {
         var taskText = taskInput.Text;  
-        taskList.Items.Add(new TaskItem { IsCompleted= false, TaskName=taskText});
+        string prio = (string)priorityMenu.Content;
+        taskList.Items.Add(new TaskItem { IsCompleted= false, TaskName=taskText, priority= prio});
     }
 
     private void removeTask()
@@ -90,5 +101,10 @@ public class TaskItem
     public bool IsCompleted
     {
         get; set;
+    }
+
+    public required string priority
+    {
+        get; set; 
     }
 }

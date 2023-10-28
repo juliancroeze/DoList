@@ -224,7 +224,7 @@ namespace ToDoApp.DoList_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[64];
+            _typeNameTable = new string[66];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -285,12 +285,14 @@ namespace ToDoApp.DoList_XamlTypeInfo
             _typeNameTable[57] = "ToDoApp.Behaviors.NavigationViewHeaderMode";
             _typeNameTable[58] = "ToDoApp.Views.ShellPage";
             _typeNameTable[59] = "ToDoApp.ViewModels.ShellViewModel";
-            _typeNameTable[60] = "ToDoApp.Views.ToDoPage";
-            _typeNameTable[61] = "ToDoApp.ViewModels.ToDoViewModel";
-            _typeNameTable[62] = "ToDoApp.Views.TrashPage";
-            _typeNameTable[63] = "ToDoApp.ViewModels.TrashViewModel";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.DropDownButton";
+            _typeNameTable[61] = "Microsoft.UI.Xaml.Controls.Button";
+            _typeNameTable[62] = "ToDoApp.Views.ToDoPage";
+            _typeNameTable[63] = "ToDoApp.ViewModels.ToDoViewModel";
+            _typeNameTable[64] = "ToDoApp.Views.TrashPage";
+            _typeNameTable[65] = "ToDoApp.ViewModels.TrashViewModel";
 
-            _typeTable = new global::System.Type[64];
+            _typeTable = new global::System.Type[66];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -353,10 +355,12 @@ namespace ToDoApp.DoList_XamlTypeInfo
             _typeTable[57] = typeof(global::ToDoApp.Behaviors.NavigationViewHeaderMode);
             _typeTable[58] = typeof(global::ToDoApp.Views.ShellPage);
             _typeTable[59] = typeof(global::ToDoApp.ViewModels.ShellViewModel);
-            _typeTable[60] = typeof(global::ToDoApp.Views.ToDoPage);
-            _typeTable[61] = typeof(global::ToDoApp.ViewModels.ToDoViewModel);
-            _typeTable[62] = typeof(global::ToDoApp.Views.TrashPage);
-            _typeTable[63] = typeof(global::ToDoApp.ViewModels.TrashViewModel);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.DropDownButton);
+            _typeTable[61] = typeof(global::Microsoft.UI.Xaml.Controls.Button);
+            _typeTable[62] = typeof(global::ToDoApp.Views.ToDoPage);
+            _typeTable[63] = typeof(global::ToDoApp.ViewModels.ToDoViewModel);
+            _typeTable[64] = typeof(global::ToDoApp.Views.TrashPage);
+            _typeTable[65] = typeof(global::ToDoApp.ViewModels.TrashViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -404,10 +408,11 @@ namespace ToDoApp.DoList_XamlTypeInfo
         private object Activate_51_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_53_NavigationHelper() { return new global::ToDoApp.Helpers.NavigationHelper(); }
         private object Activate_54_NavigationViewHeaderBehavior() { return new global::ToDoApp.Behaviors.NavigationViewHeaderBehavior(); }
-        private object Activate_60_ToDoPage() { return new global::ToDoApp.Views.ToDoPage(); }
-        private object Activate_61_ToDoViewModel() { return new global::ToDoApp.ViewModels.ToDoViewModel(); }
-        private object Activate_62_TrashPage() { return new global::ToDoApp.Views.TrashPage(); }
-        private object Activate_63_TrashViewModel() { return new global::ToDoApp.ViewModels.TrashViewModel(); }
+        private object Activate_60_DropDownButton() { return new global::Microsoft.UI.Xaml.Controls.DropDownButton(); }
+        private object Activate_62_ToDoPage() { return new global::ToDoApp.Views.ToDoPage(); }
+        private object Activate_63_ToDoViewModel() { return new global::ToDoApp.ViewModels.ToDoViewModel(); }
+        private object Activate_64_TrashPage() { return new global::ToDoApp.Views.TrashPage(); }
+        private object Activate_65_TrashViewModel() { return new global::ToDoApp.ViewModels.TrashViewModel(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -867,30 +872,40 @@ namespace ToDoApp.DoList_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 60:   //  ToDoApp.Views.ToDoPage
+            case 60:   //  Microsoft.UI.Xaml.Controls.DropDownButton
+                userType = new global::ToDoApp.DoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Button"));
+                userType.Activator = Activate_60_DropDownButton;
+                xamlType = userType;
+                break;
+
+            case 61:   //  Microsoft.UI.Xaml.Controls.Button
+                xamlType = new global::ToDoApp.DoList_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 62:   //  ToDoApp.Views.ToDoPage
                 userType = new global::ToDoApp.DoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_60_ToDoPage;
+                userType.Activator = Activate_62_ToDoPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 61:   //  ToDoApp.ViewModels.ToDoViewModel
+            case 63:   //  ToDoApp.ViewModels.ToDoViewModel
                 userType = new global::ToDoApp.DoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 62:   //  ToDoApp.Views.TrashPage
+            case 64:   //  ToDoApp.Views.TrashPage
                 userType = new global::ToDoApp.DoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_62_TrashPage;
+                userType.Activator = Activate_64_TrashPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 63:   //  ToDoApp.ViewModels.TrashViewModel
+            case 65:   //  ToDoApp.ViewModels.TrashViewModel
                 userType = new global::ToDoApp.DoList_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
