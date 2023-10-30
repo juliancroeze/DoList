@@ -94,7 +94,6 @@ This is the list of major frameworks/libraries I used to create this project. An
 
 * ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white)
 * [![csharp][csharp]][csharp-url]
-* [![wasdk][wasdk]][wasdk-url]
 * [![win3][win3]][win3-url]
 * [![tsw][tsw]][tsw-url]
 
